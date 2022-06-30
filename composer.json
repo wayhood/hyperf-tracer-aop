@@ -1,0 +1,39 @@
+{
+    "name": "wayhood/hyperf-tracer-aop",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf"
+    ],
+    "description": "",
+    "autoload": {
+        "psr-4": {
+            "Wayhood\\HyperfTracerAop\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HyperfTest\\": "tests"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "ext-swoole": ">=4.5",
+        "hyperf/tracer": "~2.2.0",
+        "hyperf/di": "~2.2.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "co-phpunit -c phpunit.xml --colors=always",
+        "analyse": "phpstan analyse --memory-limit 300M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Wayhood\\HyperfTracerAop\\ConfigProvider"
+        }
+    }
+}
