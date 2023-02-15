@@ -18,7 +18,7 @@ use const OpenTracing\Tags\SPAN_KIND;
 
 class SpanStraterAspect extends AbstractAspect
 {
-    public $classes = [
+    public array $classes = [
         'Hyperf\Tracer\SpanStarter::startSpan',
     ];
 

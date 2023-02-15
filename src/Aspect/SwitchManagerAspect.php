@@ -13,7 +13,7 @@ use OpenTracing\Span;
 
 class SwitchManagerAspect extends AbstractAspect
 {
-    public $classes = [
+    public array $classes = [
         'Hyperf\Tracer\SwitchManager::isEnable',
     ];
 
