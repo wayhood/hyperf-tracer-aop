@@ -8,7 +8,7 @@ use Hyperf\Context\Context;
 use Hyperf\Di\Annotation\Aspect;
 use Hyperf\Di\Aop\AbstractAspect;
 use Hyperf\Di\Aop\ProceedingJoinPoint;
-use Hyperf\Utils\Coroutine;
+use Hyperf\Coroutine\Coroutine;
 use OpenTracing\Span;
 
 class SwitchManagerAspect extends AbstractAspect
